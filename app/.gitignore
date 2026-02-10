@@ -1,0 +1,20 @@
+# зависимости
+node_modules/
+
+# сборка Vite
+dist/
+
+# логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# редакторы / ОС
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.iml
