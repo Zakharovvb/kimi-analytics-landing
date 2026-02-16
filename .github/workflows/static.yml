@@ -32,6 +32,13 @@ jobs:
         with:
           path: app
 
+      - name: Show where we are
+        run: pwd && ls
+
+      - name: Show package.json from app
+        run: cat package.json
+        working-directory: app
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
