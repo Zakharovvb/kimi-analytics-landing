@@ -5,9 +5,9 @@ const WorkloadSection = () => {
     { name: 'ДВАСО', norm: 70, actual: 7, percentage: 121, type: 'Симфонический оркестр' },
     { name: '«Дальний Восток»', norm: 65, actual: 14, percentage: 259, type: 'Ансамбль песни и танца' },
     { name: 'ОРНИ', norm: 66, actual: 13, percentage: 236, type: 'Оркестр русских народных инструментов' },
-    { name: '«Солисты»', norm: 164, actual: 15, percentage: 109, type: 'Камерный ансамбль' },
-    { name: '«Геликон»', norm: 81, actual: 11, percentage: 162, type: 'Ансамбль баянов и аккордеонов' },
-    { name: '«Глория»', norm: 98, actual: 10, percentage: 122, type: 'Камерный хор' }
+    { name: '«Солисты»', norm: 164, actual: 15, percentage: 109, type: 'Творческое объединение' },
+    { name: '«Геликон»', norm: 81, actual: 11, percentage: 162, type: 'Филармонический театр' },
+    { name: '«Глория»', norm: 98, actual: 10, percentage: 122, type: 'Ансамбль камерной музыки' }
   ];
 
   const concertStructure = [
