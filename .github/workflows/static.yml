@@ -30,38 +30,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          path: app
-
-      - name: Show where we are
-        run: pwd && ls
-
-      - name: Show package.json from app
-        run: cat package.json
-        working-directory: app
-
+          path: repo
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: app/package-lock.json
-
+          cache-dependency-path: repo/app/package-lock.json
       - name: Install dependencies
         run: npm install
-        working-directory: app
-
+        working-directory: repo/app
       - name: Build
         run: npm run build
-        working-directory: app
-
+        working-directory: repo/app
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: app/dist
-
+          path: repo/app/dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
